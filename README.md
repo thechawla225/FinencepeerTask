@@ -10,12 +10,12 @@
 ## Tech used:
 - Django (backend)
 - HTML (frontend)
-- SQLite (databsse)
+- SQLite (database)
 
 ## Instructions to run the project:
 - pip install django
 - navigate to folder with file "manage.py"
-- run command python manage.py runserver
+- run command "python manage.py runserver"
 - go to link "http://127.0.0.1:8000"
 - ignore any terminal logs
 
