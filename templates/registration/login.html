@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    {% if form.errors %}
+    <h1>Oops! Something isn't right</h1>
+    {% endif %}
+    <h1>Welcome!</h1>
+    <h2>Login to use the app</h2>
+    <form method="post" action="{%url 'login'%}">
+      {% csrf_token %}
+      <p>Username: {{form.username}}</p>
+      <p>Password: {{form.password}}</p>
+      <p><input type="submit" value="Login" /></p>
+    </form>
+  </body>
+</html>

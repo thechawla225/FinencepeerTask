@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <h2>Register for the app</h2>
+    <form method="post" action="{%url 'register'%}">
+      {% csrf_token %} {% if form.errors %}
+      <h1>{{form.errors}}</h1>
+      {% endif %} {{form}}
+      <p><input type="submit" value="Register" /></p>
+    </form>
+  </body>
+</html>

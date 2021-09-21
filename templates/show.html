@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Data</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <h2>Here is the data you uploaded</h2>
+    <table>
+      <tr>
+        <th>UserId</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Body</th>
+      </tr>
+      {%for result in Details%}
+
+      <tr>
+        <td>{{result.userId}}</td>
+        <td>{{result.id1}}</td>
+        <td>{{result.title}}</td>
+        <td>{{result.body}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+  </body>
+</html>

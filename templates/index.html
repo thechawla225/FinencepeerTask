@@ -1,0 +1,31 @@
+<html>
+  <h1>Welcome!</h1>
+  {%if user.is_authenticated%}
+  <h2>Your username: {{user.username}}</h2>
+  <form method="post" enctype="multipart/form-data" action="getFile">
+    {% csrf_token %}
+    <div>
+      <label class="custom-file-upload">
+        Choose file (Remember file name must not have spaces)
+        <input name="filePath" type="file" id="file" />
+      </label>
+      <input type="submit" value="Upload File" id="submit" />
+    </div>
+  </form>
+  <form action="logout">
+    <input type="submit" value="Logout" id="logout" />
+  </form>
+  {%else%}
+  <h2>You are not logged in please login before using the app</h2>
+  <form action="login">
+    <input type="submit" value="Login" id="login here" />
+  </form>
+  <form action="register">
+    <input
+      type="submit"
+      value="Don't have an account? Register"
+      id="register here"
+    />
+  </form>
+  {%endif%}
+</html>
