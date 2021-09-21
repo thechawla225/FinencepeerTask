@@ -1,6 +1,6 @@
 # Ankit Chawla 18BCE0830
 
-## I was unable to upload the demo video on google drive link shared, I have shared the public drive link to the video in the form and here is the link: https://drive.google.com/file/d/1LNPxmftj0yXtDEArdRkpbS2mmPreFLoq/view?usp=sharing
+## Video Link: https://drive.google.com/file/d/1LNPxmftj0yXtDEArdRkpbS2mmPreFLoq/view?usp=sharing
 
 ## The following assumptions have been made about the json file that user will upload:
 - File is in json format
@@ -25,6 +25,3 @@
 - upload json file
 - view json file data
 
-## Error in drive: 
-
-![image](https://user-images.githubusercontent.com/45570514/134154672-7afe9386-0fa2-4d98-97e8-d5f4d454e203.png)
